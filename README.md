@@ -1,7 +1,8 @@
-<h1 align="center">WordHive</h1>
+<h1 align="center"><img src="src/logo.png" width="20" height="20"></img> WordHive <img src="src/logo.png" width="20" height="20"></img></h1>
 
-<p align="center">Project started on 7/14/23</p>
-<p align="center">Expected completion of MVP by 7/25/23</p>
+
+<p>Project started on 7/14/23</p>
+<p>Expected completion of MVP by 7/25/23</p>
 
 <h2 align="center">Description and Context</h2>
 
@@ -25,8 +26,10 @@ WordHive is a challenging and addictive puzzle that tests your vocabulary skills
 
 This application is being created using the [Free Bee API](https://freebee.fun/api.html). This API provides random game data specifically designed for the rules of the NYT spelling bee game.
 
+<div align="center">
 <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
 <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
 <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
 <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
 <img src="https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white">
+</div>
