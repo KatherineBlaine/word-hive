@@ -1,4 +1,5 @@
 import './App.css';
+import Home from '../Home/Home';
 import { data } from '../../data/data';
 import { useState, useEffect } from 'react';
 
@@ -10,10 +11,7 @@ const App = () => {
   }, [])
 
   return (
-    <div className='home-page'>
-      <h1>WordHive</h1>
-      <button>Let's Play!</button>
-    </div>
+    <Home />
   );
 }
 
