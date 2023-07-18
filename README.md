@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+<h1 align="center"><img src="src/logo.png" width="20" height="20"></img> WordHive <img src="src/logo.png" width="20" height="20"></img></h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<p>Project started on 7/14/23</p>
+<p>Expected completion of MVP by 7/25/23</p>
 
-In the project directory, you can run:
+<h2 align="center">Description and Context</h2>
 
-### `npm start`
+WordHive is a spin off of the New York Times Spelling Bee word game. This is a game I have loved for years, but the only drawback is when playing on the NYT app you are limited to one puzzle a day and required to pay a subscription fee to play the puzzle to completion.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Developing this application is allowing me to keep my skills sharp as I look for my first job in frontend software development. Additionally, I am able to add my own personal touch to one of my favorite word games and play as much as I want without paying the subscription fee. 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<h2 align="center">Game Rules</h2>
 
-### `npm test`
+WordHive is a challenging and addictive puzzle that tests your vocabulary skills. Here are the basic rules:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Objective: The goal of the game is to create as many valid words as possible using the seven given letters while including the center letter in every word.
+2. Letter Set: Each puzzle consists of a set of seven letters, including one letter in the center, which is highlighted.
+3. Word Requirements: Valid words must contain at least four letters and include the center letter. The center letter must be used in every word.
+4. Accepted Words: All acceptable words must be real English words found in the New York Times Word List, which is based on the Merriam-Webster Dictionary.
+5. Letter Usage: You can use each letter in the set as many times as you like, but each word must be formed using only the given set of letters.
+6. Word Lengths: Longer words earn more points. Words with four letters earn one point, while longer words earn additional points based on their length.
+7. Pangram: A pangram is a word that uses all seven letters in the set. Finding at least one pangram is an additional challenge and earns bonus points.
 
-### `npm run build`
+<h3 align="center">Technologies Used</h3>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This application is being created using the [Free Bee API](https://freebee.fun/api.html). This API provides random game data specifically designed for the rules of the NYT spelling bee game.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+<img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E">
+<img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white">
+<img src="https://img.shields.io/badge/Cypress-17202C?style=for-the-badge&logo=cypress&logoColor=white">
+</div>
