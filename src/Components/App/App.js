@@ -11,7 +11,7 @@ const App = () => {
   return (
     <Routes>
       <Route path='/' element={<Home letsPlay={setGameData}/>}/>
-      <Route path='new-game' element={<Game />}/>
+      <Route path='new-game' element={<Game data={gameData}/>}/>
     </Routes>
   );
 }
