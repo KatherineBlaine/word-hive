@@ -1,10 +1,13 @@
 import './App.css';
+import Home from '../Home/Home';
+import { data } from '../../data/data';
+import { useState, useEffect } from 'react';
 
-function App() {
+const App = () => {
+  const [gameData, setGameData] = useState({})
+
   return (
-    <>
-      <h1>WordHive</h1>
-    </>
+    <Home letsPlay={setGameData}/>
   );
 }
 
