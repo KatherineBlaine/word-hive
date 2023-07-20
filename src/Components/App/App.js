@@ -6,12 +6,8 @@ import { useState, useEffect } from 'react';
 const App = () => {
   const [gameData, setGameData] = useState({})
 
-  useEffect(() => {
-    setGameData(data)
-  }, [])
-
   return (
-    <Home />
+    <Home letsPlay={setGameData}/>
   );
 }
 
