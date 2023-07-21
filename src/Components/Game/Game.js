@@ -8,7 +8,7 @@ const Game = ({ data }) => {
   const [selectedLetters, setSelectedLetters] = useState([])
   const [word, setWord] = useState('')
 
-  let submittedWord;
+  let validWord;
 
   useEffect(() => {
     setLetters(data.letters.toUpperCase().split(''))
@@ -21,7 +21,7 @@ const Game = ({ data }) => {
   }, [selectedLetters])
 
   const checkWordValidity = () => {
-    wordList.includes(word.toLowerCase()) ? submittedWord = word : console.log('Invalid word!')
+    wordList.includes(word.toLowerCase()) ? validWord = word : console.log('Invalid word!')
     setWord('')
   }
 
