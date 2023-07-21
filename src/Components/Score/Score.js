@@ -11,7 +11,11 @@ const Score = ({ userWords, score, letters, updateScore}) => {
 
   const calculateScore = () => {
    return userWords.reduce((accumulator, currentWord) => {
-    if (currentWord.length === 4) {
+    if (letters.every(letter => currentWord.includes(letter))) {
+      const pangramScore = currentWord.length + 7
+      accumulator += pangramScore;
+    }
+    else if (currentWord.length === 4) {
       accumulator += 1;
     } else if (currentWord.length > 4) {
       accumulator += currentWord.length
