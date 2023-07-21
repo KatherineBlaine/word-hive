@@ -12,10 +12,12 @@ const App = () => {
   const [level, setLevel] = useState('')
 
   return (
-    <Routes>
-      <Route path='/' element={<Home letsPlay={setGameData}/>}/>
-      <Route path='new-game' element={<Game data={gameData} userWords={userWords} updateUserWords={setUserWords} score={score} updateScore={setScore} level={level} updateLevel={setLevel}/>}/>
-    </Routes>
+    <div className='page'>
+      <Routes>
+        <Route path='/' element={<Home letsPlay={setGameData}/>}/>
+        <Route path='new-game' element={<Game data={gameData} userWords={userWords} updateUserWords={setUserWords} score={score} updateScore={setScore} level={level} updateLevel={setLevel}/>}/>
+      </Routes>
+    </div>
   );
 }
 

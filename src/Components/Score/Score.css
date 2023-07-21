@@ -5,5 +5,8 @@
   width: 100vw;
   margin: none;
   background-color: yellow;
-  height: 15vh;
+  bottom: 0;
+  position: fixed;
+  padding: 1vh;
 }
+
