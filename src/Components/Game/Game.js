@@ -40,7 +40,7 @@ const Game = ({ data, userWords, updateUserWords, score, updateScore }) => {
         <button onClick={checkWordValidity}>Enter</button>
       </div>
       <div>
-        <Score userWords={userWords} updateUserWords={updateUserWords} score={score} updateScore={updateScore}/>
+        <Score userWords={userWords} letters={letters} score={score} updateScore={updateScore}/>
       </div>
     </div>
   )
