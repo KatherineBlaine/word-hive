@@ -59,3 +59,8 @@
 .input {
   align-self: center;
 }
+
+.game-page {
+  display: flex;
+  justify-content: center;
+}

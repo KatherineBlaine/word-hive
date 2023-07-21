@@ -7,11 +7,13 @@ import { useState, useEffect } from 'react';
 
 const App = () => {
   const [gameData, setGameData] = useState({})
+  const [userWords, setUserWords] = useState([])
+  const [score, setScore] = useState(0)
 
   return (
     <Routes>
       <Route path='/' element={<Home letsPlay={setGameData}/>}/>
-      <Route path='new-game' element={<Game data={gameData}/>}/>
+      <Route path='new-game' element={<Game data={gameData} userWords={userWords} updateUserWords={setUserWords} score={score} updateScore={setScore}/>}/>
     </Routes>
   );
 }
