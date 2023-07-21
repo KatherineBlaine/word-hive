@@ -6,7 +6,6 @@ const Game = ({ data }) => {
   const [centerLetter, setCenterLetter] = useState('')
   const [selectedLetters, setSelectedLetters] = useState([])
   const [word, setWord] = useState('')
-  const [userWords, setUserWords] = useState('')
 
   useEffect(() => {
     setLetters(data.letters.toUpperCase().split(''))
