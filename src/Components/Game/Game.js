@@ -4,20 +4,28 @@ import './Game.css'
 const Game = ({ data }) => {
   const [letters, setLetters] = useState([])
   const [centerLetter, setCenterLetter] = useState('')
+  const [wordList, setWordList] = useState([])
   const [selectedLetters, setSelectedLetters] = useState([])
   const [word, setWord] = useState('')
+
+  let submittedWord;
 
   useEffect(() => {
     setLetters(data.letters.toUpperCase().split(''))
     setCenterLetter(data.center.toUpperCase())
+    setWordList(data.wordlist)
   }, [])
 
   useEffect(() => {
     setWord(selectedLetters.join(''))
   }, [selectedLetters])
 
+  const checkWordValidity = () => {
+    wordList.includes(word.toLowerCase()) ? submittedWord = word : console.log('Invalid word!')
+    setWord('')
+  }
+
   return (
-    <>
     <div className="game-board">
       {letters.length > 0 && <div className="all-letters">
         <p id="letter1" className="letter" onClick={() => setSelectedLetters([...word, letters[0]])}>{letters[0]}</p>
@@ -29,9 +37,8 @@ const Game = ({ data }) => {
         <p id="center" className="letter" onClick={() => setSelectedLetters([...word, centerLetter])}>{centerLetter}</p>
       </div>}
       <input value={word} onChange={(event) => setWord(event.target.value)}></input>
-      <button onClick={() => setWord('')}>Enter</button>
+      <button onClick={checkWordValidity}>Enter</button>
     </div>
-    </>
   )
 }
 
