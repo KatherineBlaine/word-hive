@@ -9,11 +9,12 @@ const App = () => {
   const [gameData, setGameData] = useState({})
   const [userWords, setUserWords] = useState([])
   const [score, setScore] = useState(0)
+  const [level, setLevel] = useState('')
 
   return (
     <Routes>
       <Route path='/' element={<Home letsPlay={setGameData}/>}/>
-      <Route path='new-game' element={<Game data={gameData} userWords={userWords} updateUserWords={setUserWords} score={score} updateScore={setScore}/>}/>
+      <Route path='new-game' element={<Game data={gameData} userWords={userWords} updateUserWords={setUserWords} score={score} updateScore={setScore} level={level} updateLevel={setLevel}/>}/>
     </Routes>
   );
 }

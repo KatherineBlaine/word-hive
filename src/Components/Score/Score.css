@@ -1,0 +1,9 @@
+.score-board {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  margin: none;
+  background-color: yellow;
+  height: 15vh;
+}
