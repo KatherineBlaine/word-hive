@@ -1,0 +1,61 @@
+.game-board {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.all-letters {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  font-size:larger;
+  width: 30vw;
+}
+
+.letter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  width: 3vw;
+  height: 3vw;
+}
+
+#center {
+  grid-column: 2;
+  grid-row: 2;
+  background-color: yellow;
+}
+
+#letter1 {
+  grid-column: 1;
+}
+
+#letter2 {
+  grid-column: 1;
+}
+
+#letter3 {
+  grid-column: 1;
+}
+
+#letter4 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+#letter5 {
+  grid-column: 3;
+  grid-row: 2;
+}
+
+#letter6 {
+  grid-column: 3;
+  grid-row: 3;
+}
+
+.input {
+  align-self: center;
+}
