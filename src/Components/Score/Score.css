@@ -1,0 +1,12 @@
+.score-board {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  margin: none;
+  background-color: yellow;
+  bottom: 0;
+  position: fixed;
+  padding: 1vh;
+}
+
