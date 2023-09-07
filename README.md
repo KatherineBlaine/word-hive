@@ -2,7 +2,6 @@
 
 
 <p>Project started on 7/14/23</p>
-<p>Expected completion of MVP by 7/25/23</p>
 
 <h2 align="center">Description and Context</h2>
 
